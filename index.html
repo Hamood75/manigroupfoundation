@@ -383,21 +383,24 @@
     </div>
 </div>
 
-<!-- Video Modal -->
+<!-- Video Modal with Height Control -->
 <div class="modal fade" id="eventVideoModal" tabindex="-1" aria-labelledby="eventVideoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content bg-dark">
-            <div class="modal-header border-0">
-                <h5 class="modal-title text-white" id="eventVideoModalLabel">Good Hope Visit Highlights</h5>
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title text-white">Good Hope Visit Highlights</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body p-0">
-                <video controls class="w-100" poster="img/video-thumbnail.jpg">
-                    <source src="videos/event-highlights.mp4" type="video/mp4">
-                    <source src="videos/event-highlights.webm" type="video/webm">
-                    <source src="videos/event-highlights.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
+            <div class="modal-body p-3">
+                <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-height: 80vh;">
+                    <video controls 
+                           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;"
+                           poster="img/video-thumbnail.jpg">
+                        <source src="videos/event-highlights.mp4" type="video/mp4">
+                        <source src="videos/event-highlights.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
     </div>
