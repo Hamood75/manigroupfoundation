@@ -104,11 +104,44 @@
             </div>
         </div>
 
+
+        <!-- Donation Modal -->
+<div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="donationModalLabel">Donate via M-Pesa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="mb-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/M-PESA_LOGO-01.svg/768px-M-PESA_LOGO-01.svg.png?20191120100524" alt="M-Pesa" style="max-width: 200px; height: auto;">
+                </div>
+                <h4 class="mb-3">Use Paybill Number</h4>
+                <div class="donation-details bg-light p-4 rounded">
+                    <h2 class="text-primary mb-0">3224910</h2>
+                    <p class="mb-0 mt-2">Account Name: <strong>MANI GROUP FOUNDATION</strong></p>
+                </div>
+                <div class="mt-4">
+                    <p class="text-muted">
+                        <small>Go to M-Pesa &rarr; Lipa na M-Pesa &rarr; Paybill<br>
+                        Enter Business No: 3224910<br>
+                        Account Number: (Leave blank or use your name)</small>
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- About Satrt -->
 <div class="container-fluid about py-5">
     <div class="container py-5">
         <div class="row g-5 mb-5">
-            <div class="col-xl-6">
+            <!-- <div class="col-xl-6">
                 <div class="row g-4">
                     <div class="col-6">
                         <img src="img/about-1.jpg" class="img-fluid h-100 wow zoomIn" data-wow-delay="0.1s" alt="">
@@ -118,8 +151,8 @@
                         <img src="img/about-3.jpg" class="img-fluid pt-3 wow zoomIn" data-wow-delay="0.1s" alt="">
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-6 wow fadeIn" data-wow-delay="0.5s">
+            </div> -->
+            <div class="row g-4 mb-4 wow fadeIn" data-wow-delay="0.5s">
                 <p class="fs-5 text-uppercase text-primary">About Mani Group Foundation</p>
                 <h1 class="display-5 pb-4 m-0">Indeed, Allah Helps Those Who Help Themselves</h1>
                 <p class="pb-4">
@@ -155,7 +188,7 @@
                         </div>
                         
                         <div class="col-6">
-                            <a href="tel:*334*2*3224910*amount#" class="btn btn-primary py-2 px-4">Donate Now</a>
+                            <a data-bs-toggle="modal" data-bs-target="#donationModal" class="btn btn-primary py-2 px-4">Donate Now</a>
                             <p class="mb-0">Your donation helps provide food, education, and shelter to children in need. Every contribution makes a difference.</p>
                             
                         </div>
@@ -182,16 +215,7 @@
                 </div>
             </div>
         </div>
-        <div class="container text-center bg-primary py-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-2">
-                    <i class="fa fa-mosque fa-5x text-white"></i>
-                </div>
-                <div class="col-lg-7 text-center text-lg-start">
-                    <h1 class="mb-0">Every Muslim Needs To Realise The Importance Of The "Pillar" Of Islam</h1>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </div>
 <!-- About End -->
@@ -209,7 +233,7 @@
                 <div class="footer-item mt-5">
                     <h4 class="text-light mb-4">MANI<span class="text-primary">GROUPFOUNDATION</span></h4>
                     <p class="mb-4 text-secondary">Help bring smiles and hope to children in need. Every contribution, big or small helps provide essential resources, education and a brighter future.</p>
-                    <a href="tel:*334*2*3224910*amount#" class="btn btn-primary py-2 px-4">Donate Now</a>
+                    <a data-bs-toggle="modal" data-bs-target="#donationModal" class="btn btn-primary py-2 px-4">Donate Now</a>
 
                 </div>
             </div>
