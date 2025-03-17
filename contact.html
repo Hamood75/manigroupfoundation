@@ -105,6 +105,38 @@
         </div>
         <!-- Hero End -->
 
+        <!-- Donation Modal -->
+<div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="donationModalLabel">Donate via M-Pesa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="mb-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/M-PESA_LOGO-01.svg/768px-M-PESA_LOGO-01.svg.png?20191120100524" alt="M-Pesa" style="max-width: 200px; height: auto;">
+                </div>
+                <h4 class="mb-3">Use Paybill Number</h4>
+                <div class="donation-details bg-light p-4 rounded">
+                    <h2 class="text-primary mb-0">3224910</h2>
+                    <p class="mb-0 mt-2">Account Name: <strong>MANI GROUP FOUNDATION</strong></p>
+                </div>
+                <div class="mt-4">
+                    <p class="text-muted">
+                        <small>Go to M-Pesa &rarr; Lipa na M-Pesa &rarr; Paybill<br>
+                        Enter Business No: 3224910<br>
+                        Account Number: (Leave blank or use your name)</small>
+                    </p>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
         <!-- Contact Start -->
 <div class="container-fluid contact py-5">
@@ -169,7 +201,7 @@
                 <div class="footer-item mt-5">
                     <h4 class="text-light mb-4">MANI<span class="text-primary">GROUPFOUNDATION</span></h4>
                     <p class="mb-4 text-secondary">Help bring smiles and hope to children in need. Every contribution, big or small helps provide essential resources, education and a brighter future.</p>
-                    <a href="tel:*334*2*3224910*amount#" class="btn btn-primary py-2 px-4">Donate Now</a>
+                    <a data-bs-toggle="modal" data-bs-target="#donationModal" class="btn btn-primary py-2 px-4">Donate Now</a>
 
                 </div>
             </div>
