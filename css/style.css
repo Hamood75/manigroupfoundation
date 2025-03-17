@@ -275,6 +275,24 @@ h4, h5, h6, .h4, .h5, .h6 {
     color: var(--bs-primary);
     opacity: 0.5s;
 }
+
+/* For mobile optimization */
+@media (max-width: 768px) {
+    .video-container {
+        padding-bottom: 75%; /* 4:3 aspect ratio */
+        max-height: 60vh;
+    }
+}
+
+/* Control video controls appearance */
+video::-webkit-media-controls {
+    background: rgba(0,0,0,0.5);
+}
+
+video::-webkit-media-controls-play-button {
+    background-color: #fff;
+    border-radius: 50%;
+}
 /*** Events End ***/
 
 

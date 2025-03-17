@@ -142,15 +142,14 @@
         <div class="row g-4 event-item wow fadeIn" data-wow-delay="0.3s">
             <div class="col-3 col-lg-2 pe-0">
                 <div class="text-center border-bottom border-dark py-3 px-2">
-                    <h6>05 Apr 2025</h6>
-                    <p class="mb-0">Sat 02:00 PM</p>
+                    <h6>27th Apr 2025</h6>
+                    <p class="mb-0">Sunday</p>
                 </div>
             </div>
             <div class="col-9 col-lg-6 border-start border-dark pb-5">
                 <div class="ms-3">
                     <h4 class="mb-3">Ramadhan Food Drive</h4>
                     <p class="mb-4">Help us distribute food packages to families in need during Ramadhan. Your support can bring joy and relief to many during this holy month.</p>
-                    <a href="#" class="btn btn-primary px-3">Join Now</a>
                 </div>
             </div>
             <div class="col-12 col-lg-4">
@@ -194,28 +193,30 @@
     </div>
 </div>
 
-<!-- Video Modal -->
+<!-- Video Modal with Height Control -->
 <div class="modal fade" id="eventVideoModal" tabindex="-1" aria-labelledby="eventVideoModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
         <div class="modal-content bg-dark">
-            <div class="modal-header border-0">
-                <h5 class="modal-title text-white" id="eventVideoModalLabel">Good Hope Visit Highlights</h5>
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title text-white">Good Hope Visit Highlights</h5>
                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body p-0">
-                <video controls class="w-100" poster="img/video-thumbnail.jpg">
-                    <source src="videos/event-highlights.mp4" type="video/mp4">
-                    <source src="videos/event-highlights.webm" type="video/webm">
-                    <source src="videos/event-highlights.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
+            <div class="modal-body p-3">
+                <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-height: 80vh;">
+                    <video controls 
+                           style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;"
+                           poster="img/video-thumbnail.jpg">
+                        <source src="videos/event-highlights.mp4" type="video/mp4">
+                        <source src="videos/event-highlights.webm" type="video/webm">
+                        <source src="videos/event-highlights.ogv" type="video/ogv">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-
-        
          <!-- Footer Start -->
          <div class="container-fluid footer pt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
